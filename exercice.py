@@ -14,7 +14,7 @@ def convert_to_absolute() -> float:
 
 def use_prefixes() -> List[str]:
     prefixes, suffixes = 'JKLMNOP', 'ack'
- for lettre in prefixes :
+ for lettre in prefixes:
      nom =lettre + suffixes
      resultat.append(nom)
      
@@ -22,7 +22,22 @@ def use_prefixes() -> List[str]:
 
 
 def prime_integer_summation() -> int:
-    return 0
+    n=0
+    c=0
+    i=0
+    somme=0
+    
+    while c<0:
+     estpremier=True   
+        for i in range(1,11)
+          if(n%i==0 and i!=1 and i!= n)
+           estpremier=False
+           break
+     if estpremier   
+         c+=1
+         n+=1
+         somme+=n
+    return somme
 
 
 def factorial(number: int) -> int:
