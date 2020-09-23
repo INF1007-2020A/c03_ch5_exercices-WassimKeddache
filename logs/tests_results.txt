@@ -1,0 +1,45 @@
+test_factorial (__main__.TestExercice) ... FAIL
+test_prefixes (__main__.TestExercice) ... ERROR
+test_summation (__main__.TestExercice) ... FAIL
+
+======================================================================
+ERROR: test_prefixes (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 14, in test_prefixes
+    output = exercice.use_prefixes()
+  File "/home/runner/work/c03_ch5_exercices-WassimKeddache/c03_ch5_exercices-WassimKeddache/exercice.py", line 19, in use_prefixes
+    resultat.append(nom)
+NameError: name 'resultat' is not defined
+
+======================================================================
+FAIL: test_factorial (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 50, in test_factorial
+    'Erreur dans le remplacement de caractère'
+AssertionError: Lists differ: [1, 2, 5040, 362880] != [1, 6, 40320, 3628800]
+
+First differing element 1:
+2
+6
+
+- [1, 2, 5040, 362880]
+?     ^  --
+
++ [1, 6, 40320, 3628800]
+?     ^    +++        +
+ : Erreur dans le remplacement de caractère
+
+======================================================================
+FAIL: test_summation (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 38, in test_summation
+    'Retrait du mauvais caractère'
+AssertionError: 0 != 24133 : Retrait du mauvais caractère
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=2, errors=1)
